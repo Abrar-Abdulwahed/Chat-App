@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Chat App</title>
+  </head>
+  <body>
+
+      <main class="chat-main">
+        <div class="col-md-4 bg-white ">
+          <div class="chat-sidebar">
+            <!-- member list -->
+            <ul class="friend-list">
+              <li class="active bounceInDown">
+                <a href="#" class="clearfix">
+                  <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
+                  <div class="friend-name">	
+                    <strong>John Doe</strong>
+                  </div>
+                  <div class="last-message text-muted">Hello, Are you there?</div>
+                  <small class="time text-muted">Just now</small>
+                  <small class="chat-alert label label-danger">1</small>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="clearfix">
+                  <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
+                  <div class="friend-name">	
+                    <strong>Jane Doe</strong>
+                  </div>
+                  <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
+                  <small class="time text-muted">5 mins ago</small>
+                <small class="chat-alert text-muted"><i class="fa fa-check"></i></small>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="clearfix">
+                  <img src="https://bootdey.com/img/Content/user_3.jpg" alt="" class="img-circle">
+                  <div class="friend-name">	
+                    <strong>Kate</strong>
+                  </div>
+                  <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
+                  <small class="time text-muted">Yesterday</small>
+                  <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
+                </a>
+              </li>  
+              <li>
+                <a href="#" class="clearfix">
+                  <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
+                  <div class="friend-name">	
+                    <strong>Kate</strong>
+                  </div>
+                  <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
+                  <small class="time text-muted">Yesterday</small>
+                  <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
+                </a>
+              </li>     
+              <li>
+                <a href="#" class="clearfix">
+                  <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
+                  <div class="friend-name">	
+                    <strong>Kate</strong>
+                  </div>
+                  <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
+                  <small class="time text-muted">Yesterday</small>
+                  <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
+                </a>
+              </li>        
+              <li>
+                <a href="#" class="clearfix">
+                  <img src="https://bootdey.com/img/Content/user_6.jpg" alt="" class="img-circle">
+                  <div class="friend-name">	
+                    <strong>Kate</strong>
+                  </div>
+                  <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
+                  <small class="time text-muted">Yesterday</small>
+                  <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
+                </a>
+              </li>          
+              <li>
+                <a href="#" class="clearfix">
+                  <img src="https://bootdey.com/img/Content/user_5.jpg" alt="" class="img-circle">
+                  <div class="friend-name">	
+                    <strong>Kate</strong>
+                  </div>
+                  <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
+                  <small class="time text-muted">Yesterday</small>
+                  <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
+                </a>
+              </li>
+              <li>
+                  <a href="#" class="clearfix">
+                  <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
+                  <div class="friend-name">	
+                    <strong>Jane Doe</strong>
+                  </div>
+                  <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
+                  <small class="time text-muted">5 mins ago</small>
+                <small class="chat-alert text-muted"><i class="fa fa-check"></i></small>
+                </a>
+              </li>                 
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-8 bg-white ">
+          <div class="chat-messages">              
+          </div>
+          <div class="chat-box bg-white">
+            <form id="chat-form">
+              <input
+                id="msg"
+                type="text"
+                class="form-control border no-shadow no-rounded" placeholder="Type your message here"
+                required
+                autocomplete="off"
+              />
+              <button class="btn"><i class="fa fa-paper-plane"></i> Send</button>
+            </form>
+          </div>            
+        </div>       
+      </main>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
